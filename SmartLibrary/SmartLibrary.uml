@@ -314,6 +314,65 @@
         <packagedElement xmi:type="uml:Realization" xmi:id="_hojTcCHVEfCD1OdlNAKD1g" client="_wdO6oCHTEfCD1OdlNAKD1g" supplier="_qzRBcCHTEfCD1OdlNAKD1g"/>
         <packagedElement xmi:type="uml:Realization" xmi:id="_lp5B8CHVEfCD1OdlNAKD1g" client="_H4iSACHVEfCD1OdlNAKD1g" supplier="_aeTTQCHVEfCD1OdlNAKD1g"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_wBTsQCHWEfCT6qf0SkD4Ig" name="MEBookAccess">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_B_ZCcCHXEfCT6qf0SkD4Ig" name="EBookAccess"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_HyhesCHXEfCT6qf0SkD4Ig" name="EBookAccessImpl" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QOas8CHXEfCT6qf0SkD4Ig" name="subscriptionPlanP" visibility="public" type="_yuDw8CHXEfCT6qf0SkD4Ig"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_cVqWICHYEfCT6qf0SkD4Ig" name="freeAccess">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_oFLRQCHYEfCT6qf0SkD4Ig" name="payPerBook">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_iteXUCHZEfCT6qf0SkD4Ig" name="createAccess"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_6uxXsCHaEfCT6qf0SkD4Ig" client="_HyhesCHXEfCT6qf0SkD4Ig" supplier="_B_ZCcCHXEfCT6qf0SkD4Ig"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_yuDw8CHXEfCT6qf0SkD4Ig" name="Plan"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_w7M2wCHYEfCT6qf0SkD4Ig" name="DPayPerBook">
+        <packagedElement xmi:type="uml:Class" xmi:id="_EWz64CHZEfCT6qf0SkD4Ig" name="EBookAccessImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QwE9oCHZEfCT6qf0SkD4Ig" name="book" visibility="public" type="_ZOYWwCHFEfChQ4ahDTRNwQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_YwmegCHZEfCT6qf0SkD4Ig" name="accessStamp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_DZByECHbEfCT6qf0SkD4Ig" name="ebookaccessimpl" type="_HyhesCHXEfCT6qf0SkD4Ig" association="_DY8SgCHbEfCT6qf0SkD4Ig">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DZByESHbEfCT6qf0SkD4Ig"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DZByEiHbEfCT6qf0SkD4Ig" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_oUhNcCHbEfCT6qf0SkD4Ig" name="creaetAccess">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_zla58CHbEfCT6qf0SkD4Ig" type="_ZOYWwCHFEfChQ4ahDTRNwQ"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_1_da0CHYEfCT6qf0SkD4Ig" name="DSubscription">
+        <packagedElement xmi:type="uml:Class" xmi:id="_xDL4oCHZEfCT6qf0SkD4Ig" name="EbookAccessImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Fjy18CHaEfCT6qf0SkD4Ig" name="startDate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UsLxYCHaEfCT6qf0SkD4Ig" name="endDate">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fcJekiHbEfCT6qf0SkD4Ig" name="ebookaccessimpl" type="_HyhesCHXEfCT6qf0SkD4Ig" association="_fcI3gCHbEfCT6qf0SkD4Ig">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fcJekyHbEfCT6qf0SkD4Ig"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fcJelCHbEfCT6qf0SkD4Ig" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_apRa4CHaEfCT6qf0SkD4Ig" name="addPlan">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_2o3c0CHbEfCT6qf0SkD4Ig" type="_yuDw8CHXEfCT6qf0SkD4Ig"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_6z0hsCHYEfCT6qf0SkD4Ig" name="DFreeAccess">
+        <packagedElement xmi:type="uml:Class" xmi:id="_jP3dQCHaEfCT6qf0SkD4Ig" name="EBookAccessImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_pIalACHaEfCT6qf0SkD4Ig" name="book" type="_ZOYWwCHFEfChQ4ahDTRNwQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hDq2AiHbEfCT6qf0SkD4Ig" name="ebookaccessimpl" type="_HyhesCHXEfCT6qf0SkD4Ig" association="_hDqO8CHbEfCT6qf0SkD4Ig">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hDq2AyHbEfCT6qf0SkD4Ig"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hDrdECHbEfCT6qf0SkD4Ig" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_uLF0sCHaEfCT6qf0SkD4Ig" name="createAccess">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_5of2sCHbEfCT6qf0SkD4Ig" type="_ZOYWwCHFEfChQ4ahDTRNwQ"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_yXQFMCGwEfCj4s3pYeYrjw" memberEnd="_yXQsQiGwEfCj4s3pYeYrjw _yXRTUSGwEfCj4s3pYeYrjw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yXQsQCGwEfCj4s3pYeYrjw" source="org.eclipse.papyrus">
@@ -362,6 +421,24 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1P1cESHVEfCD1OdlNAKD1g" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_1P2DIyHVEfCD1OdlNAKD1g" name="reviewmanagementimpl" type="_wdO6oCHTEfCD1OdlNAKD1g" association="_1Pzm4CHVEfCD1OdlNAKD1g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_DY8SgCHbEfCT6qf0SkD4Ig" memberEnd="_DZByECHbEfCT6qf0SkD4Ig _DZEOUCHbEfCT6qf0SkD4Ig">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DY_84CHbEfCT6qf0SkD4Ig" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DZAj8CHbEfCT6qf0SkD4Ig" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_DZEOUCHbEfCT6qf0SkD4Ig" name="ebookaccessimpl" type="_EWz64CHZEfCT6qf0SkD4Ig" association="_DY8SgCHbEfCT6qf0SkD4Ig"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_fcI3gCHbEfCT6qf0SkD4Ig" memberEnd="_fcJekiHbEfCT6qf0SkD4Ig _fcKFoCHbEfCT6qf0SkD4Ig">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fcJekCHbEfCT6qf0SkD4Ig" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_fcJekSHbEfCT6qf0SkD4Ig" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_fcKFoCHbEfCT6qf0SkD4Ig" name="ebookaccessimpl" type="_xDL4oCHZEfCT6qf0SkD4Ig" association="_fcI3gCHbEfCT6qf0SkD4Ig"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_hDqO8CHbEfCT6qf0SkD4Ig" memberEnd="_hDq2AiHbEfCT6qf0SkD4Ig _hDrdESHbEfCT6qf0SkD4Ig">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_hDq2ACHbEfCT6qf0SkD4Ig" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hDq2ASHbEfCT6qf0SkD4Ig" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_hDrdESHbEfCT6qf0SkD4Ig" name="dfreeaccess" type="_jP3dQCHaEfCT6qf0SkD4Ig" association="_hDqO8CHbEfCT6qf0SkD4Ig"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_50fsICGrEfCi1uMo7LyYAA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_50oPACGrEfCi1uMo7LyYAA" source="PapyrusVersion">
@@ -424,4 +501,21 @@
   <umlvmprofile:adds xmi:id="_kfqcwiHQEfC_usST_e82bA" base_Property="_kfW6wiHQEfC_usST_e82bA"/>
   <umlvmprofile:module xmi:id="_3VwZACHQEfC_usST_e82bA" base_Package="_sC_EQCHQEfC_usST_e82bA"/>
   <umlvmprofile:module xmi:id="_ldlWMCHTEfCD1OdlNAKD1g" base_Package="_jDR28CHTEfCD1OdlNAKD1g"/>
+  <umlvmprofile:module xmi:id="_8kOaQCHWEfCT6qf0SkD4Ig" base_Package="_wBTsQCHWEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:delta xmi:id="_0sv1wCHYEfCT6qf0SkD4Ig" base_Package="_w7M2wCHYEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:delta xmi:id="_3Rts4CHYEfCT6qf0SkD4Ig" base_Package="_1_da0CHYEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:delta xmi:id="_9RTQwCHYEfCT6qf0SkD4Ig" base_Package="_6z0hsCHYEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:modifiedClass xmi:id="_OPPYkCHZEfCT6qf0SkD4Ig" base_Class="_EWz64CHZEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:adds xmi:id="_8tducCHZEfCT6qf0SkD4Ig" base_Property="_QwE9oCHZEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:adds xmi:id="_93PZ8CHZEfCT6qf0SkD4Ig" base_Property="_YwmegCHZEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:modifiedClass xmi:id="_BDONwCHaEfCT6qf0SkD4Ig" base_Class="_xDL4oCHZEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:adds xmi:id="_TOqDcCHaEfCT6qf0SkD4Ig" base_Property="_Fjy18CHaEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:adds xmi:id="_Vn7A4CHaEfCT6qf0SkD4Ig" base_Property="_UsLxYCHaEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:modifiedClass xmi:id="_m2iB8CHaEfCT6qf0SkD4Ig" base_Class="_jP3dQCHaEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:adds xmi:id="_zDNaMCHaEfCT6qf0SkD4Ig" base_Operation="_uLF0sCHaEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:adds xmi:id="_0PKP8CHaEfCT6qf0SkD4Ig" base_Property="_pIalACHaEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:adds xmi:id="_rpPGgCHbEfCT6qf0SkD4Ig" base_Operation="_oUhNcCHbEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:modifies xmi:id="_G_QccCHcEfCT6qf0SkD4Ig" base_Association="_DY8SgCHbEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:modifies xmi:id="_Mt1I0CHcEfCT6qf0SkD4Ig" base_Association="_fcI3gCHbEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:modifies xmi:id="_RinGcCHcEfCT6qf0SkD4Ig" base_Association="_hDqO8CHbEfCT6qf0SkD4Ig"/>
 </xmi:XMI>
