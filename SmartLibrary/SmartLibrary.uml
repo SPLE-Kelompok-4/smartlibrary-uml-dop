@@ -373,6 +373,95 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_1t6bACHcEfCcmIqUWikr-w" name="MCommunityContent">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_6o5HQCHcEfCcmIqUWikr-w" name="CommunityContent" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_9nTZICHcEfCcmIqUWikr-w" name="CommunityContentImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_CsM2YCHdEfCcmIqUWikr-w" name="author" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ew1AkCHdEfCcmIqUWikr-w" name="contentID" visibility="protected" type="_khbYUCHFEfChQ4ahDTRNwQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_H3CjkCHdEfCcmIqUWikr-w" name="createdAt" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_KEddYCHdEfCcmIqUWikr-w" name="updatedAt" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_YB62wCHdEfCcmIqUWikr-w" client="_9nTZICHcEfCcmIqUWikr-w" supplier="_6o5HQCHcEfCcmIqUWikr-w" contract="_6o5HQCHcEfCcmIqUWikr-w"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_OJAQ4CHdEfCcmIqUWikr-w" name="createContent" isAbstract="true"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_QjA1MCHdEfCcmIqUWikr-w" name="readContent" isAbstract="true"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_SrfkoCHdEfCcmIqUWikr-w" name="updateContent" isAbstract="true"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_T3WTwCHdEfCcmIqUWikr-w" name="deleteContent" isAbstract="true"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Y5NEECHdEfCcmIqUWikr-w" name="DArticle">
+        <packagedElement xmi:type="uml:Class" xmi:id="_ct6EwCHdEfCcmIqUWikr-w" name="CommunityContentImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_fMSLsCHdEfCcmIqUWikr-w" name="title" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_i_SjQCHdEfCcmIqUWikr-w" name="body" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_w-ZiciHdEfCcmIqUWikr-w" name="communitycontentimpl" type="_9nTZICHcEfCcmIqUWikr-w" association="_w-Y7YCHdEfCcmIqUWikr-w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w-ZicyHdEfCcmIqUWikr-w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w-ZidCHdEfCcmIqUWikr-w" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_lwyagCHdEfCcmIqUWikr-w" name="createContent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ovUoMCHdEfCcmIqUWikr-w" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_qAA0ACHdEfCcmIqUWikr-w" name="body">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_tGpNwCHdEfCcmIqUWikr-w" name="updateContent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_9StzwCHdEfCcmIqUWikr-w" name="contentID" type="_khbYUCHFEfChQ4ahDTRNwQ" effect="update"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="__mXRYCHdEfCcmIqUWikr-w" name="body" effect="update">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_3n6NECHdEfCcmIqUWikr-w" name="DForumThread">
+        <packagedElement xmi:type="uml:Class" xmi:id="_BV-N0CHeEfCcmIqUWikr-w" name="CommunityContentImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FBCxYCHeEfCcmIqUWikr-w" name="topic" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_J2NJgCHeEfCcmIqUWikr-w" name="initialPost" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MpgXkCHeEfCcmIqUWikr-w" name="replies" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_w9WkIiHeEfCcmIqUWikr-w" name="communitycontentimpl" type="_9nTZICHcEfCcmIqUWikr-w" association="_w9V9ECHeEfCcmIqUWikr-w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_w9WkIyHeEfCcmIqUWikr-w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_w9WkJCHeEfCcmIqUWikr-w" value="1"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gvpmcCHeEfCcmIqUWikr-w" name="createContent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_jDjiwCHeEfCcmIqUWikr-w" name="topic">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_m69SICHeEfCcmIqUWikr-w" name="initialPost">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_ndUYUCHeEfCcmIqUWikr-w" name="updateContent">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_qg4P8CHeEfCcmIqUWikr-w" name="contentId" type="_khbYUCHFEfChQ4ahDTRNwQ" effect="update"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_s8nSkCHeEfCcmIqUWikr-w" name="topic" effect="update">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_ux_f0CHeEfCcmIqUWikr-w" name="initialPost" effect="update">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_2nbLACHeEfCcmIqUWikr-w" name="addReply">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_7LXQQCHeEfCcmIqUWikr-w" name="contentId" type="_khbYUCHFEfChQ4ahDTRNwQ"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_9FKDcCHeEfCcmIqUWikr-w" name="comment">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_QBIasCHeEfCcmIqUWikr-w" name="Reply"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_yXQFMCGwEfCj4s3pYeYrjw" memberEnd="_yXQsQiGwEfCj4s3pYeYrjw _yXRTUSGwEfCj4s3pYeYrjw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yXQsQCGwEfCj4s3pYeYrjw" source="org.eclipse.papyrus">
@@ -439,6 +528,18 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_hDq2ASHbEfCT6qf0SkD4Ig" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_hDrdESHbEfCT6qf0SkD4Ig" name="dfreeaccess" type="_jP3dQCHaEfCT6qf0SkD4Ig" association="_hDqO8CHbEfCT6qf0SkD4Ig"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_w-Y7YCHdEfCcmIqUWikr-w" memberEnd="_w-ZiciHdEfCcmIqUWikr-w _w-ZidSHdEfCcmIqUWikr-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w-ZicCHdEfCcmIqUWikr-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w-ZicSHdEfCcmIqUWikr-w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_w-ZidSHdEfCcmIqUWikr-w" name="communitycontentimpl" type="_ct6EwCHdEfCcmIqUWikr-w" association="_w-Y7YCHdEfCcmIqUWikr-w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_w9V9ECHeEfCcmIqUWikr-w" memberEnd="_w9WkIiHeEfCcmIqUWikr-w _w9WkJSHeEfCcmIqUWikr-w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_w9WkICHeEfCcmIqUWikr-w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_w9WkISHeEfCcmIqUWikr-w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_w9WkJSHeEfCcmIqUWikr-w" name="communitycontentimpl" type="_BV-N0CHeEfCcmIqUWikr-w" association="_w9V9ECHeEfCcmIqUWikr-w"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_50fsICGrEfCi1uMo7LyYAA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_50oPACGrEfCi1uMo7LyYAA" source="PapyrusVersion">
@@ -518,4 +619,18 @@
   <umlvmprofile:modifies xmi:id="_G_QccCHcEfCT6qf0SkD4Ig" base_Association="_DY8SgCHbEfCT6qf0SkD4Ig"/>
   <umlvmprofile:modifies xmi:id="_Mt1I0CHcEfCT6qf0SkD4Ig" base_Association="_fcI3gCHbEfCT6qf0SkD4Ig"/>
   <umlvmprofile:modifies xmi:id="_RinGcCHcEfCT6qf0SkD4Ig" base_Association="_hDqO8CHbEfCT6qf0SkD4Ig"/>
+  <umlvmprofile:module xmi:id="_5YyKQCHcEfCcmIqUWikr-w" base_Package="_1t6bACHcEfCcmIqUWikr-w"/>
+  <umlvmprofile:delta xmi:id="_a8w3QCHdEfCcmIqUWikr-w" base_Package="_Y5NEECHdEfCcmIqUWikr-w"/>
+  <umlvmprofile:adds xmi:id="_hQ688CHdEfCcmIqUWikr-w" base_Property="_fMSLsCHdEfCcmIqUWikr-w"/>
+  <umlvmprofile:adds xmi:id="_lH4ncCHdEfCcmIqUWikr-w" base_Property="_i_SjQCHdEfCcmIqUWikr-w"/>
+  <umlvmprofile:modifies xmi:id="_rrv9ECHdEfCcmIqUWikr-w" base_Operation="_lwyagCHdEfCcmIqUWikr-w"/>
+  <umlvmprofile:modifies xmi:id="_vLYFoCHdEfCcmIqUWikr-w" base_Operation="_tGpNwCHdEfCcmIqUWikr-w"/>
+  <umlvmprofile:modifies xmi:id="_zVeHgCHdEfCcmIqUWikr-w" base_Association="_w-Y7YCHdEfCcmIqUWikr-w"/>
+  <umlvmprofile:delta xmi:id="_CUlyMCHeEfCcmIqUWikr-w" base_Package="_3n6NECHdEfCcmIqUWikr-w"/>
+  <umlvmprofile:adds xmi:id="_JA2O0CHeEfCcmIqUWikr-w" base_Property="_FBCxYCHeEfCcmIqUWikr-w"/>
+  <umlvmprofile:adds xmi:id="_KnRaECHeEfCcmIqUWikr-w" base_Property="_J2NJgCHeEfCcmIqUWikr-w"/>
+  <umlvmprofile:modifies xmi:id="_vjNhYCHeEfCcmIqUWikr-w" base_Operation="_ndUYUCHeEfCcmIqUWikr-w"/>
+  <umlvmprofile:modifies xmi:id="_wPmGQCHeEfCcmIqUWikr-w" base_Operation="_gvpmcCHeEfCcmIqUWikr-w"/>
+  <umlvmprofile:modifies xmi:id="_xsGggCHeEfCcmIqUWikr-w" base_Association="_w9V9ECHeEfCcmIqUWikr-w"/>
+  <umlvmprofile:adds xmi:id="_90bkQCHeEfCcmIqUWikr-w" base_Operation="_2nbLACHeEfCcmIqUWikr-w"/>
 </xmi:XMI>
