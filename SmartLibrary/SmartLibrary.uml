@@ -279,6 +279,41 @@
         <packagedElement xmi:type="uml:Interface" xmi:id="_l75fUCHSEfC_usST_e82bA" name="WishlistItemImpl"/>
       </packagedElement>
       <packagedElement xmi:type="uml:DataType" xmi:id="_2xwCICHSEfC_usST_e82bA" name="Item"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_jDR28CHTEfCD1OdlNAKD1g" name="MReviewManagement">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_qzRBcCHTEfCD1OdlNAKD1g" name="ReviewManagement"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_wdO6oCHTEfCD1OdlNAKD1g" name="ReviewManagementImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_7CELUCHTEfCD1OdlNAKD1g" name="reviewId" type="_khbYUCHFEfChQ4ahDTRNwQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="___tKACHTEfCD1OdlNAKD1g" name="userId" type="_khbYUCHFEfChQ4ahDTRNwQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JLF7gCHUEfCD1OdlNAKD1g" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_MILXsCHUEfCD1OdlNAKD1g" name="createdAt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1P2DICHVEfCD1OdlNAKD1g" name="reviewitemimpl" type="_H4iSACHVEfCD1OdlNAKD1g" association="_1Pzm4CHVEfCD1OdlNAKD1g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1P2DISHVEfCD1OdlNAKD1g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1P2DIiHVEfCD1OdlNAKD1g" value="*"/>
+          </ownedAttribute>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_wUPhQCHUEfCD1OdlNAKD1g" name="addReview">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_5b2mACHUEfCD1OdlNAKD1g" type="_2xwCICHSEfC_usST_e82bA"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_9FfmMCHUEfCD1OdlNAKD1g" name="removeReview">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_B1gYkCHVEfCD1OdlNAKD1g" name="itemId" type="_khbYUCHFEfChQ4ahDTRNwQ"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_DGNLcCHVEfCD1OdlNAKD1g" name="getReviews"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_H4iSACHVEfCD1OdlNAKD1g" name="ReviewItemImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PEeUQCHVEfCD1OdlNAKD1g" name="reviewItemId" type="_khbYUCHFEfChQ4ahDTRNwQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TKKXQCHVEfCD1OdlNAKD1g" name="reviewId" type="_khbYUCHFEfChQ4ahDTRNwQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_U6UGQCHVEfCD1OdlNAKD1g" name="itemId" type="_khbYUCHFEfChQ4ahDTRNwQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_XFkc4CHVEfCD1OdlNAKD1g" name="addedAt">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_aeTTQCHVEfCD1OdlNAKD1g" name="ReviewItemImpl"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_hojTcCHVEfCD1OdlNAKD1g" client="_wdO6oCHTEfCD1OdlNAKD1g" supplier="_qzRBcCHTEfCD1OdlNAKD1g"/>
+        <packagedElement xmi:type="uml:Realization" xmi:id="_lp5B8CHVEfCD1OdlNAKD1g" client="_H4iSACHVEfCD1OdlNAKD1g" supplier="_aeTTQCHVEfCD1OdlNAKD1g"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_yXQFMCGwEfCj4s3pYeYrjw" memberEnd="_yXQsQiGwEfCj4s3pYeYrjw _yXRTUSGwEfCj4s3pYeYrjw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yXQsQCGwEfCj4s3pYeYrjw" source="org.eclipse.papyrus">
@@ -321,6 +356,12 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ultNwSHSEfC_usST_e82bA" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_ulub4SHSEfC_usST_e82bA" name="wishlistmanagementimpl" type="_GnO_ACHREfC_usST_e82bA" association="_uljcwCHSEfC_usST_e82bA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1Pzm4CHVEfCD1OdlNAKD1g" memberEnd="_1P2DICHVEfCD1OdlNAKD1g _1P2DIyHVEfCD1OdlNAKD1g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1P1cECHVEfCD1OdlNAKD1g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1P1cESHVEfCD1OdlNAKD1g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_1P2DIyHVEfCD1OdlNAKD1g" name="reviewmanagementimpl" type="_wdO6oCHTEfCD1OdlNAKD1g" association="_1Pzm4CHVEfCD1OdlNAKD1g"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_50fsICGrEfCi1uMo7LyYAA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_50oPACGrEfCi1uMo7LyYAA" source="PapyrusVersion">
@@ -382,4 +423,5 @@
   <umlvmprofile:adds xmi:id="_kfqcwSHQEfC_usST_e82bA" base_Operation="_kfW6xiHQEfC_usST_e82bA"/>
   <umlvmprofile:adds xmi:id="_kfqcwiHQEfC_usST_e82bA" base_Property="_kfW6wiHQEfC_usST_e82bA"/>
   <umlvmprofile:module xmi:id="_3VwZACHQEfC_usST_e82bA" base_Package="_sC_EQCHQEfC_usST_e82bA"/>
+  <umlvmprofile:module xmi:id="_ldlWMCHTEfCD1OdlNAKD1g" base_Package="_jDR28CHTEfCD1OdlNAKD1g"/>
 </xmi:XMI>
