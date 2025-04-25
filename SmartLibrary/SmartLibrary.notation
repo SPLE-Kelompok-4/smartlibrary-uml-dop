@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_5ySssCGrEfCi1uMo7LyYAA" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_GO0e0CGsEfCi1uMo7LyYAA" type="Package_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GO4wQCGsEfCi1uMo7LyYAA" type="Package_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GO4wQSGsEfCi1uMo7LyYAA" type="Package_PackagedElementCompartment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_GO4wQiGsEfCi1uMo7LyYAA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GO4wQyGsEfCi1uMo7LyYAA"/>
+    </children>
+    <element xmi:type="uml:Package" href="SmartLibrary.uml#_GOvmUCGsEfCi1uMo7LyYAA"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GO0e0SGsEfCi1uMo7LyYAA" x="160" y="120" width="741" height="281"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_b6NNMCGsEfCi1uMo7LyYAA" type="StereotypeComment">
+    <styles xmi:type="notation:TitleStyle" xmi:id="_b6NNMSGsEfCi1uMo7LyYAA"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_b6NNMyGsEfCi1uMo7LyYAA" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Package" href="SmartLibrary.uml#_GOvmUCGsEfCi1uMo7LyYAA"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_b6NNMiGsEfCi1uMo7LyYAA" x="360" y="120"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_5ySssSGrEfCi1uMo7LyYAA" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_5ySssiGrEfCi1uMo7LyYAA"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_5ySssyGrEfCi1uMo7LyYAA" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+    <owner xmi:type="uml:Model" href="SmartLibrary.uml#_5xIPECGrEfCi1uMo7LyYAA"/>
+  </styles>
+  <element xmi:type="uml:Model" href="SmartLibrary.uml#_5xIPECGrEfCi1uMo7LyYAA"/>
+  <edges xmi:type="notation:Connector" xmi:id="_b6N0QCGsEfCi1uMo7LyYAA" type="StereotypeCommentLink" source="_GO0e0CGsEfCi1uMo7LyYAA" target="_b6NNMCGsEfCi1uMo7LyYAA">
+    <styles xmi:type="notation:FontStyle" xmi:id="_b6N0QSGsEfCi1uMo7LyYAA"/>
+    <styles xmi:type="notation:EObjectValueStyle" xmi:id="_b6N0RSGsEfCi1uMo7LyYAA" name="BASE_ELEMENT">
+      <eObjectValue xmi:type="uml:Package" href="SmartLibrary.uml#_GOvmUCGsEfCi1uMo7LyYAA"/>
+    </styles>
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_b6N0QiGsEfCi1uMo7LyYAA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b6N0QyGsEfCi1uMo7LyYAA"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b6N0RCGsEfCi1uMo7LyYAA"/>
+  </edges>
+</notation:Diagram>
