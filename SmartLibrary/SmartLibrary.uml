@@ -639,4 +639,6 @@
   <umlvmprofile:adds xmi:id="_9_YyMiVvEfC1SPsSUs8tnA" base_Operation="_9_WV8CVvEfC1SPsSUs8tnA"/>
   <umlvmprofile:modifies xmi:id="_ECBqECVwEfC1SPsSUs8tnA" base_Association="_C_rcQCVwEfC1SPsSUs8tnA"/>
   <umlvmprofile:delta xmi:id="_JrZGUCVwEfC1SPsSUs8tnA" base_Package="_mtNFICVvEfC1SPsSUs8tnA"/>
+  <umlvmprofile:modifiedClass xmi:id="_aRvIkCdUEfC0A--29OX36A" base_Class="_ct6EwCHdEfCcmIqUWikr-w"/>
+  <umlvmprofile:modifiedClass xmi:id="_bBWAkCdUEfC0A--29OX36A" base_Class="_BV-N0CHeEfCcmIqUWikr-w"/>
 </xmi:XMI>
