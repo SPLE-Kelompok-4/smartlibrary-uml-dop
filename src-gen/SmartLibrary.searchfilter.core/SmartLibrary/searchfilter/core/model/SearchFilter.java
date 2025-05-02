@@ -6,6 +6,6 @@ import java.util.*;
 public interface SearchFilter {
 	public EBookImpl getEbookimpl();
 	public void setEbookimpl(EBookImpl ebookimpl);
-	org.eclipse.uml2.uml.internal.impl.ClassImpl@6f32e1a (name: SearchFilterImpl, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
+	org.eclipse.uml2.uml.internal.impl.ClassImpl@3d4becde (name: SearchFilterImpl, visibility: <unset>) (isLeaf: false, isAbstract: false, isFinalSpecialization: false) (isActive: false)
 	HashMap<String, Object> toHashMap();
 }
