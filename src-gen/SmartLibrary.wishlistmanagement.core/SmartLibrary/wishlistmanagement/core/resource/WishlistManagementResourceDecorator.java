@@ -11,16 +11,8 @@ public abstract class WishlistManagementResourceDecorator extends WishlistManage
         this.record = record;
     }
 
-    public List<HashMap<String,Object>> saveWishlishManagement(VMJExchange vmjExchange){
-		return record.saveWishlishManagement(vmjExchange);
-	}
-
     public WishlishManagement createWishlishManagement(VMJExchange vmjExchange){
 		return record.createWishlishManagement(vmjExchange);
-	}
-
-    public WishlishManagement createWishlishManagement(VMJExchange vmjExchange, int id){
-		return record.createWishlishManagement(vmjExchange, id);
 	}
 
     public HashMap<String, Object> updateWishlishManagement(VMJExchange vmjExchange){
