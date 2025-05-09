@@ -1,7 +1,7 @@
-module SmartLibrary.wishlistmanagement.core {
+module SmartLibrary.wishlistmanagement.wishlistwithdescription {
 	requires SmartLibrary.wishlistmanagement.core;
-	exports SmartLibrary.wishlistmanagement;
-    exports SmartLibrary.wishlistmanagement.core;
+    exports SmartLibrary.wishlistmanagement.wishlistwithdescription;
+
 	requires vmj.routing.route;
 	requires vmj.hibernate.integrator;
 	requires vmj.auth;
@@ -10,5 +10,5 @@ module SmartLibrary.wishlistmanagement.core {
 	requires java.naming;
 	requires java.net.http;
 
-	opens SmartLibrary.wishlistmanagement.core to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
+	opens SmartLibrary.wishlistmanagement.wishlistwithdescription to org.hibernate.orm.core, gson, vmj.hibernate.integrator;
 }
