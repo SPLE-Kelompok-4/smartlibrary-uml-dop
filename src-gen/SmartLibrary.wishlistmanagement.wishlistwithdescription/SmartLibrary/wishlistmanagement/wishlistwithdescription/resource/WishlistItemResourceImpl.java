@@ -4,12 +4,12 @@ import java.util.*;
 import vmj.routing.route.Route;
 import vmj.routing.route.VMJExchange;
 
-import SmartLibrary.wishlistmanagement.core.WishlistManagementResourceDecorator;
-import SmartLibrary.wishlistmanagement.core.WishlistManagementImpl;
-import SmartLibrary.wishlistmanagement.core.WishlistManagementResourceComponent;
+import SmartLibrary.wishlistmanagement.core.WishlistItemResourceDecorator;
+import SmartLibrary.wishlistmanagement.core.WishlistItemImpl;
+import SmartLibrary.wishlistmanagement.core.WishlistItemResourceComponent;
 
-public class WishlistManagementResourceImpl extends WishlistManagementResourceDecorator {
-    public WishlistManagementResourceImpl (WishlistManagementResourceComponent record) {
+public class WishlistItemResourceImpl extends WishlistItemResourceDecorator {
+    public WishlistItemResourceImpl (WishlistItemResourceComponent record) {
         super(record);
     }
 
@@ -25,20 +25,20 @@ public class WishlistManagementResourceImpl extends WishlistManagementResourceDe
 	}
 
     public WishlistManagement create(VMJExchange vmjExchange){
-		String Description = (String) vmjExchange.getRequestBodyForm("Description");
+		String description = (String) vmjExchange.getRequestBodyForm("description");
 		
 		  = record.create(vmjExchange);
-		 deco = Factory.create("SmartLibrary.wishlistwithdescription.core.WishlistManagementImpl", , Description);
+		 deco = Factory.create("SmartLibrary.wishlistwithdescription.core.WishlistItemImpl", , description);
 			return deco;
 	}
 
     public WishlistManagement create(VMJExchange vmjExchange, int id){
-		String Description = (String) vmjExchange.getRequestBodyForm("Description");
+		String description = (String) vmjExchange.getRequestBodyForm("description");
 		  = Repository.getObject(id);
 		int recordId = (((Decorator) saved.getRecord()).getId();
 		
 		  = record.create(vmjExchange);
-		 deco = Factory.create("SmartLibrary.wishlistwithdescription.core.WishlistManagementImpl", id, , Description);
+		 deco = Factory.create("SmartLibrary.wishlistwithdescription.core.WishlistItemImpl", id, , description);
 			return deco;
 	}
 
