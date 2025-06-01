@@ -441,6 +441,17 @@
           </ownedOperation>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_3yGGoD7jEfCuPZ-7Hiy59w" name="DWishlistWithDescription">
+        <packagedElement xmi:type="uml:Class" xmi:id="_Lu-EwD7kEfCuPZ-7Hiy59w" name="WishlistItemImpl">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_hKHXsD7kEfCuPZ-7Hiy59w" name="description">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_uvPwoD7kEfCuPZ-7Hiy59w" name="wishlistitemimpl" type="_JjSrACHSEfC_usST_e82bA" association="_uvExgD7kEfCuPZ-7Hiy59w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uvQXsD7kEfCuPZ-7Hiy59w"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uvQXsT7kEfCuPZ-7Hiy59w" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_yXQFMCGwEfCj4s3pYeYrjw" memberEnd="_yXQsQiGwEfCj4s3pYeYrjw _yXRTUSGwEfCj4s3pYeYrjw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yXQsQCGwEfCj4s3pYeYrjw" source="org.eclipse.papyrus">
@@ -549,6 +560,12 @@
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_C_sqYiVwEfC1SPsSUs8tnA" name="searchfilterimpl" type="_o6HooCVvEfC1SPsSUs8tnA" association="_C_rcQCVwEfC1SPsSUs8tnA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uvExgD7kEfCuPZ-7Hiy59w" memberEnd="_uvPwoD7kEfCuPZ-7Hiy59w _uvQ-wD7kEfCuPZ-7Hiy59w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uvPJkD7kEfCuPZ-7Hiy59w" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uvPJkT7kEfCuPZ-7Hiy59w" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_uvQ-wD7kEfCuPZ-7Hiy59w" name="wishlistitemimpl" type="_Lu-EwD7kEfCuPZ-7Hiy59w" association="_uvExgD7kEfCuPZ-7Hiy59w"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_50fsICGrEfCi1uMo7LyYAA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_50oPACGrEfCi1uMo7LyYAA" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_50oPASGrEfCi1uMo7LyYAA" key="Version" value="0.0.4"/>
@@ -641,4 +658,8 @@
   <umlvmprofile:delta xmi:id="_JrZGUCVwEfC1SPsSUs8tnA" base_Package="_mtNFICVvEfC1SPsSUs8tnA"/>
   <umlvmprofile:modifiedClass xmi:id="_aRvIkCdUEfC0A--29OX36A" base_Class="_ct6EwCHdEfCcmIqUWikr-w"/>
   <umlvmprofile:modifiedClass xmi:id="_bBWAkCdUEfC0A--29OX36A" base_Class="_BV-N0CHeEfCcmIqUWikr-w"/>
+  <umlvmprofile:delta xmi:id="_DDzrcD7kEfCuPZ-7Hiy59w" base_Package="_3yGGoD7jEfCuPZ-7Hiy59w"/>
+  <umlvmprofile:modifiedClass xmi:id="_R88p8D7kEfCuPZ-7Hiy59w" base_Class="_Lu-EwD7kEfCuPZ-7Hiy59w"/>
+  <umlvmprofile:adds xmi:id="_r24cYD7kEfCuPZ-7Hiy59w" base_Property="_hKHXsD7kEfCuPZ-7Hiy59w"/>
+  <umlvmprofile:modifies xmi:id="_79zcoD7kEfCuPZ-7Hiy59w" base_Association="_uvExgD7kEfCuPZ-7Hiy59w"/>
 </xmi:XMI>
